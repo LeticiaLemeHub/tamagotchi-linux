@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-image: url('assets/floresta2.png');  
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.base__imagem {
+    width: 150px;
+}
+
+.base__acoes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.base__acoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+}
+
+.base__acoes__texto {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
+
+button {
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#alimentar { background-color: #15ff00; }
+#alimentar:hover { background-color: #15ff006b; }
+
+#brincar { background-color: #ff0000; }
+#brincar:hover { background-color: #ff00006b; }
+
+#estudar { background-color: #6f00ff; }
+#estudar:hover { background-color: #6f00ff6b; }
+
+#banho { background-color: #ff9100; }
+#banho:hover { background-color: #ff91006b; }
+
+#dormir { background-color: #008cff; }
+#dormir:hover { background-color: #008cff6b; }
