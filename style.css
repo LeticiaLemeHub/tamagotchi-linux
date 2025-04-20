@@ -1,4 +1,12 @@
-body {
+:root {
+    --fundo-imagem: url('assets/neve2.png');
+  }
+  
+  .tema-escuro {
+    --fundo-imagem: url('assets/floresta2.png');
+  }
+
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,25 +14,28 @@ body {
     margin: 0;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
-}
+  }
+  
 
 .base {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-image: url('assets/floresta2.png');  
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
+  background-image: var(--fundo-imagem);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .base__imagem {
-    width: 150px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* garante que a imagem se encaixe */
 }
 
 .base__acoes-container {
@@ -73,3 +84,17 @@ button {
 
 #dormir { background-color: #008cff; }
 #dormir:hover { background-color: #008cff6b; }
+
+#toggle-theme {
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+    position: fixed;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }

@@ -59,3 +59,26 @@ setInterval(() => {
 }, 5000); 
 
 atualizarStatus();
+
+
+function modoEscuro() {
+    const root = document.documentElement;
+    const corpo = document.body;
+    const botaoModo = document.getElementById("toggle-theme");
+    const imagemCico = document.getElementById("ciço");
+
+    corpo.classList.toggle("tema-escuro");
+
+    const temaEscuroAtivo = corpo.classList.contains("tema-escuro");
+
+    if (temaEscuroAtivo) {
+
+        botaoModo.className = "fa-brands fa-linux";
+        imagemCico.src = "assets/lobinho.gif";
+        imagemCico.alt = "lobo sombrio";
+    } else {
+        botaoModo.className = "fa-solid fa-dog";
+        imagemCico.src = "assets/ciço.gif";
+        imagemCico.alt = "gatinho feliz";
+    }
+}
