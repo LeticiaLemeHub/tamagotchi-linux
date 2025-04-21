@@ -75,10 +75,14 @@ function modoEscuro() {
 
         botaoModo.className = "fa-brands fa-linux";
         imagemCico.src = "assets/lobinho.gif";
-        imagemCico.alt = "lobo sombrio";
+        imagemCico.alt = "buguinha-lobo";
+        imagemCico.style.width = '250px';
+        imagemCico.style.height = '250px';
     } else {
         botaoModo.className = "fa-solid fa-dog";
         imagemCico.src = "assets/ciço.gif";
-        imagemCico.alt = "gatinho feliz";
+        imagemCico.alt = "ciço-pinguim";
+        imagemCico.style.width = '150px';
+        imagemCico.style.height = '150px';
     }
 }
